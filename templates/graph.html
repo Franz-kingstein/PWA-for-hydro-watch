@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydro Watch - Graph</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        width: 360px;
+        background-color: #34495e;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        color: #ecf0f1;
+        margin-bottom: 20px;
+    }
+    .graph {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+        background-color: #ecf0f1;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+    }
+    .water-data {
+        background-color: #34495e;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .water-data h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .water-data ul {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+    }
+    .water-data ul li {
+        margin-bottom: 5px;
+    }
+    .ai-says {
+        background-color: #34495e;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .ai-says h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .ai-says ul {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+    }
+    .ai-says ul li {
+        margin-bottom: 5px;
+    }
+    .links {
+        margin-top: 20px;
+    }
+    .links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: #3498db;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .links a:hover {
+        background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Water Data Graph</h1>
+    <div class="graph">
+      <img src="{{ url_for('static', filename='download.jpeg') }}" alt="Water Data Graph">
+    </div>
+    <div class="water-data">
+      <h2>Water Data</h2>
+      <ul>
+        <li>Per Day: 70 Litres</li>
+        <li>Per Week: 490 Litres</li>
+        <li>Per Month: 490 Litres</li>
+      </ul>
+    </div>
+    <div class="ai-says">
+      <h2>What AI Says</h2>
+      <ul>
+        <li>Next day prediction: 490 Litres</li>
+        <li>Clean: Yes</li>
+        <li>Usage: MID</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
