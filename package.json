@@ -1,0 +1,26 @@
+{
+  "name": "hydro-watch",
+  "version": "1.0.0",
+  "description": "Hydro Watch web app for smart water management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Franz-kingstein/PWA-for-hydro-watch.git"
+  },
+  "author": "Nesakumar S",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.7",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
